@@ -1,92 +1,136 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Porfolio</title>
+    <title>Porfolio | Fabove Cedric</title>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
+
 <body>
-    <!-- liens de navigations -->
-    <nav>
-        <p>LG</p>
-        <ul>
-            <li><a href="#apropos">A propos</a></li>
-             <li><a href="#competences">Competences</a></li>
-             <li><a href="#parcours">Parcour</a></li>
-             <li><a href="#contact">Contact</a>Z</li>
-                
-                
-                
-                
-        </ul>
-    </nav>
-    <!-- Premiere page -->
     <header>
-        <p>Developpeur web - Etudiant en Informatique </p>
-        <h1>Fabove<br><em>Cedric Legrand</em></h1><br>
-        <p>passione par la creation d'expiences web <br>moderne et accessibles.En route vers le <br>developement front-end</p>
-        <button><a href="https://wa.me/237690232120">ME CONTACTER</a></button><br>
-        <img src="mon logo.png" alt="mon logo" width="200" height="200">
+        <nav class="container">
+            <div id="logo">LG</div>
+            <ul>
+                <li><a href="#apropos">A propos</a></li>
+                <li><a href="#competences">Competences</a></li>
+                <li><a href="#parcour">Parcour</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
-    <!-- section a propos -->
-     <section id="apropos">
-        <p>A propos</p>
-        <h2>Qui suis-je ?</h2>
-        <p>je suis etudiant en premiere annee d'informatique, anime par une vraie curiosite pour le web et ses teechnologies. Je m'interesse particulierement a la conception d'interfaces elegantes, a lexperience utilisateur, et aux bonnes pratiques du developement front-end.</p>
-        <p>Mon objectif: devenir Developpeur front-end capable de transformer des idees en experiences digitales memorables.</p>
-        
-        <div><p>1<sup>ére</sup></h1>annee d'informatique</p></div>
-           <div><p>3+Technologies maitrisee</p></div>
-           <div><p>&infin; Envie d'apprendre</p></div>
-           <p>Competences</p>
-           <h1>Ce que je sais faire</h1>
-           <h2>HTML</h2>
-           <P>Structure semantique, accessibilite, bonnes pratiques</P>
-           <h2>Git</h2>
-           <p>Versining, branches, gestion de l'historique.</p>
-           <h2>GitHub</h2>
-           <p>Collaboration, pull request, hebregement de projet.</p>
-           <h2>Travail en equipe</h2>
-           <p>Communication, organisation, logique algorithmique.</p>
-           <p>Parcours</p>
-           <h1>Mon chemin</h1>
-           <strong><p>2025</p></strong>
-           <p>Diplome</p>
-           <h3>Baccalaureat Scientifique</h3>
-           <p>Obtention du baccalaureat avec specialite scientifique, premier pas vers l'information</p>
-           <strong><p>2026</p></strong>
-           <P>Formation</P>
-           <h2>L1 Inforamtique</h2>
-           <p>Premiere annee de licence inforamtique, initiation a l'algorithmique, aux langages et aux sytemes.</p>
-           <p><STrong>2026</STrong></p>
-           <P>En cours</P>
-           <h2>Formation en developpement web</h2>
-           <p>Apprentisage du HTML, CSS, et des basses du developpement front-end moderne.</p>
-           <p>Contact</p>
-           <h1>Travaillons ensemble</h1>
-           <p>Une question, une idee de projet, ou simplement envie d'echanger? N'hesitez pas a m'ecrire</p>
-           <form action="3">
-            <label for="name">Nom Complet</label><br>
-            <input type="text" value="votre nom complet" ><br><br>
-            <label for="email">Adresse email</label><br>
-            <input type="email" value="votre adresse email" ><br><br>
-            <label for="text">message</label><br>
-            <textarea name="text" id="ecrire un message" cols="20" rows="5">Bonjour cedric, je voulais</textarea><br><br>
-            <button type="submit" id="https://wa.me//237640093997">Envoyer le message</button>
-            <p>LG</p>
-            
 
-
-           </form>
-
-        
+    <main class="container">
+        <section class="hero" id="debut">
+            <div class="hero-grid">
+                <div class="hero-copy">
+                    <p class="eyebrow">Développeur web · Étudiant en Informatique</p>
+                    <h1>Fabove <span>Cedric Legrand</span></h1>
+                    <p>Passionné par la création d'expériences web modernes, accessibles et élégantes. Je transforme des idées en pages fluides et impactantes.</p>
+                    <a class="btn" href="https://wa.me/237640093997" target="_blank" rel="noopener">ME CONTACTER</a>
+                </div>
+                <div class="hero-media">
+                    <img src="mon logo.png" alt="Logo Fabove" id="side">
+                </div>
+            </div>
         </section>
-    
-</body>
-<!-- footer -->
- <footer>
-    © 2026 - Fabove cedric legrand - Tout droits reserves <br><br>
-    <a href="https://github.com/legrand23">GitHub</a> | <a href="http://lgcedric2@gmail.com">Email</a>
 
- </footer>
+        <section id="apropos" class="section section-intro">
+            <div>
+                <p class="section-label">A propos</p>
+                <h2>Qui suis-je ?</h2>
+                <p>Je suis étudiant en première année d'informatique, animé par une vraie curiosité pour le web et ses technologies. Je m'intéresse particulièrement à la conception d'interfaces élégantes, à l'expérience utilisateur et aux bonnes pratiques du développement front-end.</p>
+                <p>Mon objectif : devenir développeur front-end capable de transformer des idées en expériences digitales mémorables.</p>
+            </div>
+            <div class="side">
+                <div class="to">
+                    <p><strong>1<sup>ère</sup> année</strong><br>Informatique</p>
+                </div>
+                <div class="to">
+                    <p><strong>3+</strong><br>Technologies maîtrisées</p>
+                </div>
+                <div class="to">
+                    <p><strong>∞</strong><br>Envie d'apprendre</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="competences" class="section">
+            <p class="section-label">Competences</p>
+            <h2>Ce que je sais faire</h2>
+            <div class="competences">
+                <div class="card">
+                    <h3>HTML</h3>
+                    <p>Maîtrise de la structure et de la sémantique HTML pour des pages web claires et accessibles.</p>
+                </div>
+                <div class="card">
+                    <h3>CSS</h3>
+                    <p>Conception d'interfaces visuellement attrayantes et réactives avec une attention particulière au détail.</p>
+                </div>
+                <div class="card">
+                    <h3>JavaScript</h3>
+                    <p>Création d'expériences dynamiques et interactives pour améliorer l'engagement utilisateur.</p>
+                </div>
+                <div class="card">
+                    <h3>Git</h3>
+                    <p>Gestion du code source et collaboration efficace avec Git.</p>
+                </div>
+                <div class="card">
+                    <h3>Responsive Design</h3>
+                    <p>Conception d'interfaces qui s'adaptent parfaitement à tous les écrans.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="parcour" class="section">
+            <p class="section-label">Parcour</p>
+            <h2>Mon chemin</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <p class="timeline-year">2025</p>
+                    <p class="timeline-title">Baccalauréat Scientifique</p>
+                    <p>Obtention du bac scientifique, premier pas vers l'informatique.</p>
+                </div>
+                <div class="timeline-item">
+                    <p class="timeline-year">2026</p>
+                    <p class="timeline-title">L1 Informatique</p>
+                    <p>Première année de licence informatique : algorithmique, langages et systèmes.</p>
+                </div>
+                <div class="timeline-item">
+                    <p class="timeline-year">2026</p>
+                    <p class="timeline-title">Formation en développement web</p>
+                    <p>Apprentissage du HTML, CSS et des bases du développement front-end moderne.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <p class="section-label">Contact</p>
+            <h2>Travaillons ensemble</h2>
+            <p>Une question, une idée de projet, ou simplement envie d'échanger ? N'hésitez pas à m'écrire.</p>
+            <form action="#" class="contact-form">
+                <label for="name">Nom complet</label>
+                <input id="name" type="text" placeholder="Votre nom complet">
+
+                <label for="email">Adresse email</label>
+                <input id="email" type="email" placeholder="Votre adresse email">
+
+                <label for="message">Message</label>
+                <textarea id="message" rows="5" placeholder="Bonjour Cedric, je voulais..."></textarea>
+
+                <button type="submit">Envoyer le message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>© 2026 Fabove Cedric Legrand — Tous droits réservés</p>
+        <div class="footer-links">
+            <a href="https://github.com/legrand23" target="_blank" rel="noopener">GitHub</a>
+            <a href="mailto:lgcedric2@gmail.com">Email</a>
+        </div>
+    </footer>
+</body>
+
 </html>
