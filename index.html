@@ -10,12 +10,30 @@
 
 <body>
     <header>
+        <button id="playBtn">Activer le son</button>
+        <audio id="bg-music" loop autoplay>
+            <source src="./musique/Anson_Seabra_-_Welcome_to_Wonderland__Official_Lyric_Video_(256k).mp3"
+                type="audio/mpeg">
+        </audio>
+
+        <script>
+            const btn =
+                document.getElementById("playBtn")
+            const audio =
+                document.getElementById("bg-music");
+            btn.addEventListener("click", () => {
+                audio.play().then(() => {
+                    alert("Erreur: " + err);
+                });
+            });
+        </script>
         <nav class="container">
             <div id="logo">LG</div>
             <ul>
                 <li><a href="#apropos">A propos</a></li>
                 <li><a href="#competences">Competences</a></li>
                 <li><a href="#parcour">Parcour</a></li>
+                <li><a href="#projets">Projets</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
@@ -27,7 +45,8 @@
                 <div class="hero-copy">
                     <p class="eyebrow">Développeur web · Étudiant en Informatique</p>
                     <h1>Fabove <span>Cedric Legrand</span></h1>
-                    <p>Passionné par la création d'expériences web modernes, accessibles et élégantes. Je transforme des idées en pages fluides et impactantes.</p>
+                    <p>Passionné par la création d'expériences web modernes, accessibles et élégantes. Je transforme des
+                        idées en pages fluides et impactantes.</p>
                     <a class="btn" href="https://wa.me/237640093997" target="_blank" rel="noopener">ME CONTACTER</a>
                 </div>
                 <div class="hero-media">
@@ -40,12 +59,15 @@
             <div>
                 <p class="section-label">A propos</p>
                 <h2>Qui suis-je ?</h2>
-                <p>Je suis étudiant en première année d'informatique, animé par une vraie curiosité pour le web et ses technologies. Je m'intéresse particulièrement à la conception d'interfaces élégantes, à l'expérience utilisateur et aux bonnes pratiques du développement front-end.</p>
-                <p>Mon objectif : devenir développeur front-end capable de transformer des idées en expériences digitales mémorables.</p>
+                <p>Je suis étudiant en informatique, animé par une vraie curiosité pour le web et ses
+                    technologies. Je m'intéresse particulièrement à la conception d'interfaces élégantes, à l'expérience
+                    utilisateur et aux bonnes pratiques du développement front-end.</p>
+                <p>Mon objectif : devenir développeur front-end capable de transformer des idées en expériences
+                    digitales mémorables.</p>
             </div>
             <div class="side">
                 <div class="to">
-                    <p><strong>1<sup>ère</sup> année</strong><br>Informatique</p>
+                    <p><strong>licence 1</strong><br>Informatique</p>
                 </div>
                 <div class="to">
                     <p><strong>3+</strong><br>Technologies maîtrisées</p>
@@ -66,7 +88,8 @@
                 </div>
                 <div class="card">
                     <h3>CSS</h3>
-                    <p>Conception d'interfaces visuellement attrayantes et réactives avec une attention particulière au détail.</p>
+                    <p>Conception d'interfaces visuellement attrayantes et réactives avec une attention particulière au
+                        détail.</p>
                 </div>
                 <div class="card">
                     <h3>JavaScript</h3>
@@ -88,20 +111,51 @@
             <h2>Mon chemin</h2>
             <div class="timeline">
                 <div class="timeline-item">
-                    <p class="timeline-year">2025</p>
-                    <p class="timeline-title">Baccalauréat Scientifique</p>
+                    <p class="timeline-year">2024</p>
+                    <p class="timeline-title">Baccalauréat Scientifique(GCE ADVANCED LEVEL)</p>
                     <p>Obtention du bac scientifique, premier pas vers l'informatique.</p>
                 </div>
                 <div class="timeline-item">
-                    <p class="timeline-year">2026</p>
+                    <p class="timeline-year">2025</p>
                     <p class="timeline-title">L1 Informatique</p>
                     <p>Première année de licence informatique : algorithmique, langages et systèmes.</p>
                 </div>
                 <div class="timeline-item">
                     <p class="timeline-year">2026</p>
-                    <p class="timeline-title">Formation en développement web</p>
+                    <p class="timeline-title">Formation en Bureautique(word, Excel, PowerPoint)</p>
+                    <p> Ecrire des documents, faire des calculs, tableaux, creer des diaporamas</p>
+                </div>
+                <div class="timeline-item">
+                    <p class="timeline-year">2026</p>
+                    <p class="timeline-title">Formation en développement web(propentatech)</p>
                     <p>Apprentissage du HTML, CSS et des bases du développement front-end moderne.</p>
                 </div>
+            </div>
+        </section>
+
+        <section id="projets" class="section">
+            <p class="section-label">Mes projets</p>
+            <h2>Projets en cours</h2>
+            <p class="project-intro">Voici les projets sur lesquels je travaille actuellement. Ils sont en développement et en amélioration continue.</p>
+            <div class="projects-grid">
+                <article class="project-card">
+                    <img src="https://via.placeholder.com/640x400?text=Calculatrice" alt="Aperçu du projet Calculatrice">
+                    <h3>Calculatrice interactive</h3>
+                    <p>Une calculatrice web intuitive pour effectuer rapidement des opérations mathématiques avec un design moderne.</p>
+                    <a class="project-link" href="./calculatrice/" target="_blank" rel="noopener">Voir le projet</a>
+                </article>
+                <article class="project-card">
+                    <img src="https://via.placeholder.com/640x400?text=E-commerce" alt="Aperçu du site e-commerce">
+                    <h3>Site e-commerce</h3>
+                    <p>Un site de vente en ligne avec catalogue de produits, navigation claire et expérience utilisateur fluide.</p>
+                    <a class="project-link" href="./e-com/" target="_blank" rel="noopener">Voir le projet</a>
+                </article>
+                <article class="project-card">
+                    <img src="https://via.placeholder.com/640x400?text=Caf%C3%A9" alt="Aperçu du site de café">
+                    <h3>Site de café</h3>
+                    <p>Un site élégant dédié à un café, avec présentation des boissons, ambiance chaleureuse et contact facile.</p>
+                    <a class="project-link" href="./site de cafe/" target="_blank" rel="noopener">Voir le projet</a>
+                </article>
             </div>
         </section>
 
@@ -123,14 +177,16 @@
             </form>
         </section>
     </main>
-
-    <footer class="footer">
-        <p>© 2026 Fabove Cedric Legrand — Tous droits réservés</p>
-        <div class="footer-links">
-            <a href="https://github.com/legrand23" target="_blank" rel="noopener">GitHub</a>
-            <a href="mailto:lgcedric2@gmail.com">Email</a>
-        </div>
-    </footer>
 </body>
+<footer class="footer">
+    <p>© 2026 Fabove Cedric Legrand — Tous droits réservés</p>
+    <div class="footer-links">
+        <a href="https://github.com/legrand23" target="_blank" rel="noopener">GitHub</a>
+        <a href="mailto:lgcedric2@gmail.com">Email</a>
+    </div>
+
+
+
+</footer>
 
 </html>
